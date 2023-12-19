@@ -98,16 +98,21 @@ public class Tela_CarroPersonalizado extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(247, 247, 247)
-                        .addComponent(jLabel2))
+                        .addComponent(jLabel2)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(175, 175, 175)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel1)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(rbtnCarro2)
-                                .addComponent(rbtnCarro3)
-                                .addComponent(btnContinuar, javax.swing.GroupLayout.Alignment.TRAILING))
-                            .addComponent(rbtnCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnContinuar))
+                            .addComponent(rbtnCarro1, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(rbtnCarro3)
+                                    .addComponent(jLabel1))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(46, 46, 46))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(53, 53, 53)
@@ -125,13 +130,13 @@ public class Tela_CarroPersonalizado extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(50, 50, 50)
                 .addComponent(rbtnCarro1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addComponent(rbtnCarro3)
-                .addGap(12, 12, 12)
-                .addComponent(rbtnCarro2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnContinuar)
-                .addGap(68, 68, 68)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnContinuar, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(rbtnCarro2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(137, 137, 137)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSair)
                     .addComponent(btnRetornar))
@@ -184,12 +189,12 @@ public class Tela_CarroPersonalizado extends javax.swing.JFrame {
           meuCarro.setNome(nome1);
           //personalizar1.lblCarro2.setText(nome1);
         }
-        if(rbtnCarro1.isSelected()){
+        if(rbtnCarro2.isSelected()){
           String nome1 = "Peugeot 208 Like";
           meuCarro.setNome(nome1);
           //personalizar1.lblCarro2.setText(nome1);
         }
-        if(rbtnCarro1.isSelected()){
+        if(rbtnCarro3.isSelected()){
           String nome1 = "Fiat C3 Live";
           meuCarro.setNome(nome1);
           //personalizar1.lblCarro2.setText(nome1);
