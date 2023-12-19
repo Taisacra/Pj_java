@@ -110,6 +110,11 @@ public class CarroMontado extends javax.swing.JFrame {
         BtnRetornar.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         BtnRetornar.setText("Retornar...");
         BtnRetornar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BtnRetornar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnRetornarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -161,6 +166,12 @@ public class CarroMontado extends javax.swing.JFrame {
     private void BtnSAirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSAirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_BtnSAirActionPerformed
+
+    private void BtnRetornarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRetornarActionPerformed
+        Personalizar3 personalizar3 = new Personalizar3();
+        personalizar3.setVisible(true);
+        CarroMontado.this.setVisible(false);
+    }//GEN-LAST:event_BtnRetornarActionPerformed
 
     
     public static void main(String args[]) {

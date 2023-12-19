@@ -154,7 +154,7 @@ public class Personalizar1 extends javax.swing.JFrame {
            JOptionPane.showMessageDialog(null,"Opção errada, escolha as outras abaixo.", null, HEIGHT);
            
         }else{
-            JOptionPane.showMessageDialog(null,"Você escolheu a opção correta.", null, HEIGHT);
+            //JOptionPane.showMessageDialog(null,"Você escolheu a opção correta.", null, HEIGHT);
             
 
             Personalizar2 personalizar2 = new Personalizar2();

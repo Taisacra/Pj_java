@@ -139,7 +139,7 @@ public class Personalizar2 extends javax.swing.JFrame {
         if (cbxCor.getSelectedItem().equals("<SELECIONE O ANO>")){
             JOptionPane.showMessageDialog(null,"Opção errada, escolha as outras abaixo.", null, HEIGHT);
         }else{
-            JOptionPane.showMessageDialog(null,"Você escolheu a opção correta.", null, HEIGHT);
+            //JOptionPane.showMessageDialog(null,"Você escolheu a opção correta.", null, HEIGHT);
 
             Personalizar3 personalizar3 = new Personalizar3();
             personalizar3.setVisible(true);
@@ -150,8 +150,8 @@ public class Personalizar2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnContinuar2ActionPerformed
 
     private void btnRetornarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRetornarActionPerformed
-        Tela_CarroPersonalizado tela_carropersonalizado = new Tela_CarroPersonalizado();
-        tela_carropersonalizado.setVisible(true);
+        Personalizar1 personalizar1 = new Personalizar1();
+        personalizar1.setVisible(true);
         Personalizar2.this.setVisible(false);
     }//GEN-LAST:event_btnRetornarActionPerformed
 

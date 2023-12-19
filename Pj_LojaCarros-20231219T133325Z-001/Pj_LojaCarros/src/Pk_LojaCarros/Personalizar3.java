@@ -138,7 +138,7 @@ public class Personalizar3 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Opção errada, escolha as outras abaixo.", null, HEIGHT);
          
         }else{
-            JOptionPane.showMessageDialog(null,"Você escolheu a opção correta.", null, HEIGHT);
+            //JOptionPane.showMessageDialog(null,"Você escolheu a opção correta.", null, HEIGHT);
 
             CarroMontado carromontado = new CarroMontado();
             carromontado.setVisible(true);
@@ -148,8 +148,8 @@ public class Personalizar3 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnContinuar3ActionPerformed
 
     private void btnRetornarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRetornarActionPerformed
-        Tela_CarroPersonalizado tela_carropersonalizado = new Tela_CarroPersonalizado();
-        tela_carropersonalizado.setVisible(true);
+       Personalizar2 personalizar2 = new Personalizar2();
+        personalizar2.setVisible(true);
         Personalizar3.this.setVisible(false);
     }//GEN-LAST:event_btnRetornarActionPerformed
 
